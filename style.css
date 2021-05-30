@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.MainBack{
+    height:100vh;
+    width:100vw;
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "side lunch"
+                        "side cont ";
+}
+.Mobile_nav,.text_mob{
+    display: none;
+
+}
+
+.Pc_nav{
+    background: #fafafa;
+    grid-area: side;
+}
+
+.Container{
+    background: #fafafa;
+    grid-area: cont;
+    height:50vh;
+    overflow: hidden;
+}
+.cont_child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    /* border:3px solid white; */
+    margin-left: 10em;
+}
+
+.child{
+    background: #fafafa;
+    grid-area: lunch;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.pcnavedit{
+    height:90%;
+    width:90%;
+    /* background: coral; */
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+.heading1{
+    font-size: 40px;
+    font-family: serif;
+    font-weight: bolder;
+    margin-top: 1em;
+    
+}
+ul{
+    list-style: none;
+}
+li{
+    font-family: "poppins";
+    font-weight:initial;
+    color:rgb(141, 141, 141);
+    margin:3em 0;
+}
+li:first-child{
+    text-decoration:line-through;
+}
+.cart_button{
+    height:40px;
+    width:120px;
+    font-family: "poppins";
+    font-size: 10px;
+    background: rgb(240, 86, 86);
+    border-radius: 25px;
+    font-weight:normal;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lunch{
+    /* background: yellow; */
+    font-size: 40px;
+    width: 700px;
+    margin-top: 2em;
+}
+.text_pc{
+    /* background: lightgreen; */
+    font-family: "poppins";
+    font-weight: 350;
+    height:150px;
+    width:200px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4em;
+
+}
+.line{
+    background: red;
+    height:2px;
+    width: 60px;
+   
+
+}
+.line:hover{
+    width: 120px;
+    transition: 1s ease-in-out;
+}
+
+.one{
+    /* background: pink;; */
+    height:70vh;
+    width:90vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left: 8em;
+
+}
+.one .Mexican,.one .FarmHouse{
+    height:40%;
+    width:180px;
+    /*   background:blue; */
+    margin:0 1em;
+}
+.Mexican,.FarmHouse{ 
+    height:100%;
+    width:90%;
+    background:#fafafa;
+    /* border:3px solid white; */
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    border-radius: 25px;
+    box-shadow: 20px 25px 55px rgb(146, 146, 146);
+    /* clip-path: circle(60px at 50% 40%); */
+    
+}
+
+
+
+.taco,.pizza{
+    height:10%;
+    font-family:"poppins";
+    font-size:15px;
+}
+.image1{
+    background:url("https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-600,h-450,fo-auto"); 
+    margin-top:3em;
+    height:100%;
+    width:100%;
+    /*   border-radius:50%; */
+    background-size:100% 100%;
+    clip-path:circle();
+
+}
+.image2{
+    background:url("https://www.santabanta.com/images/wallpapers/food/farmhouse-pizza-slices_1024-768.jpg"); 
+    margin-top:3em;
+    height:100%;
+    width:100%;
+    /*   border-radius:50%; */
+    background-size:95% 95%;
+    clip-path:circle();
+
+}
+.two{
+    /* background: lightgreen; */
+    height:70vh;
+    width:90vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left: -1em;
+
+}
+.two .Chicken,.two .Loaded{
+    height:40%;
+    width:180px;
+    /*   background:blue; */
+    margin:0 1em;
+}
+.Chicken,.Loaded{ 
+    height:100%;
+    width:90%;
+    background:#fafafa;
+    box-shadow: 20px 25px 55px rgb(146, 146, 146);
+    /* border:3px solid white; */
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    border-radius: 25px;
+    /* clip-path: circle(60px at 50% 40%); */
+
+}
+
+
+.nachos,.burger{
+    height:10%;
+    font-family:"poppins";
+    font-size:15px;
+}
+.image3{
+    background:url("https://i2.wp.com/globalarticlefinder.com/wp-content/uploads/2019/12/chicken-burger.jpg?resize=1024%2C883&ssl=1"); 
+    margin-top:3em;
+    height:100%;
+    width:100%;
+    /*   border-radius:50%; */
+    background-size:100% 100%;
+    clip-path:circle();
+
+}
+.image4{
+    background:url("https://i.pinimg.com/564x/8d/2e/aa/8d2eaa03021e23c16d7777b270642b03.jpg"); 
+    margin-top:3em;
+    height:100%;
+    width:100%;
+    /*   border-radius:50%; */
+    background-size:95% 95%;
+    clip-path:circle();
+
+}
+.three{
+    /* background: rgb(85, 138, 85); */
+    height:70vh;
+    width:30vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left: -1em;
+
+}
+.three .hakka{
+    height:40%;
+    width:200px;
+    /*   background:blue; */
+    margin:0 1em;
+}
+.hakka{ 
+    height:100%;
+    width:90%;
+    /* background:yellow; */
+    /* border:3px solid white; */
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    border-radius: 25px;
+    box-shadow: 20px 25px 55px rgb(146, 146, 146);
+    /* clip-path: circle(60px at 50% 40%); */
+
+
+}
+
+.noodles{
+    height:10%;
+    font-family:"poppins";
+    font-size:15px;
+}
+.image5{
+    background:url("https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-600,h-450,fo-auto"); 
+    margin-top:3em;
+    height:100%;
+    width:100%;
+    /*   border-radius:50%; */
+    background-size:100% 100%;
+    clip-path:circle();
+
+}
+@media screen and (max-width:760px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    
+    .MainBack{
+        height:100vh;
+        width:100vw;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 9% 91%;
+        grid-template-areas: "pc pc"
+                            "cont cont ";
+    }
+    .Pc_nav,.text_pc{
+        display: none;
+    }
+    .Mobile_nav{
+        display: flex;
+        grid-area: pc;
+        width:100vw;
+        background: #fafafa;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .fst,.snd,.trd{
+        height:4px;
+        width:25px;
+        border-radius: 25px;
+        background: #fd4949;
+        margin:0.5em 0;
+    }
+    .heading{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .snd{
+        width:35px;
+    }
+    .trd{
+        width:30px;
+    }
+    .cart{
+        height:50px;
+    }
+    .cart_img{
+        height: 40px;
+    }
+    .lunch{
+        /* background: yellow; */
+        font-size: 30px;
+        width: 500px;
+        margin-top: -3em;
+        /* background: chartreuse; */
+    }
+    .Container{
+        background: #fafafa;
+        grid-area: cont;
+        height:100vh;
+        overflow: hidden;
+        display:grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: -10em;
+    }
+    .cont_child{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        /* background: rgb(175, 120, 129); */
+        height:100%;
+        width:90%;
+        /* border:3px solid white; */
+        margin-left: 2.5em;
+        
+    }
+    .one{
+        /* background: pink; */
+        height:70vh;
+        width:80vw;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-left: 2.5em;
+        margin-top: -15em;
+
+    
+    }
+    .one .Mexican,.one .FarmHouse{
+        height:40%;
+        width:180px;
+        /*   background:blue; */
+        margin:0 3em;
+    }
+    .Mexican,.FarmHouse{ 
+        height:100%;
+        width:200px;
+        background:#fafafa;
+        /* border:3px solid white; */
+        display:grid;
+        align-items:center;
+        justify-content:center;
+        border-radius: 25px;
+        box-shadow: 20px 25px 55px rgb(146, 146, 146);
+        
+    }
+    .taco,.pizza{
+        height:10%;
+        font-family:"poppins";
+        font-size:15px;
+    }
+    .image1{
+        background:url("https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-600,h-450,fo-auto"); 
+        margin-top:3em;
+        height:100%;
+        width:100%;
+        /*   border-radius:50%; */
+        background-size:100% 100%;
+        clip-path:circle();
+    
+    }
+    .image2{
+        background:url("https://www.santabanta.com/images/wallpapers/food/farmhouse-pizza-slices_1024-768.jpg"); 
+        margin-top:3em;
+        height:100%;
+        width:100%;
+        /*   border-radius:50%; */
+        background-size:95% 95%;
+        clip-path:circle();
+    
+    }
+    .two{
+        /* background: lightgreen; */
+        height:70vh;
+        width:90vw;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-top: -30em;
+    
+    }
+    .two .Chicken,.two .Loaded{
+        height:40%;
+        width:180px;
+        /*   background:blue; */
+        margin:0 3em;
+    }
+    .Chicken,.Loaded{ 
+        height:100%;
+        width:90%;
+        background:#fafafa;
+        box-shadow: 20px 25px 55px rgb(146, 146, 146);
+        /* border:3px solid white; */
+        display:grid;
+        align-items:center;
+        justify-content:center;
+        border-radius: 25px;
+    }
+    .nachos,.burger{
+        height:10%;
+        font-family:"poppins";
+        font-size:15px;
+    }
+    .image3{
+        background:url("https://i2.wp.com/globalarticlefinder.com/wp-content/uploads/2019/12/chicken-burger.jpg?resize=1024%2C883&ssl=1"); 
+        margin-top:3em;
+        height:100%;
+        width:100%;
+        /*   border-radius:50%; */
+        background-size:100% 100%;
+        clip-path:circle();
+    
+    }
+    .image4{
+        background:url("https://i.pinimg.com/564x/8d/2e/aa/8d2eaa03021e23c16d7777b270642b03.jpg"); 
+        margin-top:3em;
+        height:100%;
+        width:100%;
+        /*   border-radius:50%; */
+        background-size:95% 95%;
+        clip-path:circle();
+    
+    }
+    .three{
+        display: none;
+    }
+    .text_mob{
+        display: grid;
+        height:20vh;
+        width: 100vw;
+        /* background: chartreuse; */
+        align-items: center;
+        justify-content: center;
+        margin-top: -10em;
+        
+    }
+    .random{
+        font-family: "poppins";
+        font-weight: 350;
+        width:60%;
+        /* background: cyan; */
+        text-align: center;
+    }
+    .lineq{
+        background: red;
+        height:2px;
+        width: 60px;
+    }
+    .random,.lineq{
+        margin-left: 10em;
+    }
+}
+@media screen and (max-width:380px) {
+    .Mobile_nav{
+        display: flex;
+        grid-area: pc;
+        width:100vw;
+        background: #fafafa;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .MainBack{
+        height:170vh;
+        width:100vw;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 92%;
+        grid-template-areas: "pc pc"
+                            "cont cont ";
+    }
+    .lunch{
+        background: #fafafa;
+        font-size:20px;
+        width: 330px;
+        margin-top: -5em;
+        margin-left: 1em;
+        /* background: chartreuse; */
+    }
+    .Container{
+        /* background: #c45757; */
+        grid-area: cont;
+        height:120vh;
+        overflow: hidden;
+        display:grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: -5em;
+    }
+    .cont_child{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        /* background: rgb(175, 120, 129); */
+        height:100%;
+        width:90%;
+        /* border:3px solid white; */
+        margin-left: 1em;
+        margin-top: -1em;
+        
+    }
+    .one{
+        /* background: pink; */
+        height:70vh;
+        width:90%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-left: 27px;
+        margin-top: -15em;
+        
+
+    
+    }
+    .one .Mexican,.one .FarmHouse{
+        height:40%;
+        /* width:500px; */
+        /*   background:blue; */
+        margin:0 .5em;
+    }
+    .Mexican,.FarmHouse{ 
+        height:100%;
+        /* width:2000px; */
+        background:#fafafa;
+        /* border:3px solid white; */
+        display:grid;
+        align-items:center;
+        justify-content:center;
+        border-radius: 25px;
+        box-shadow: 20px 25px 55px rgb(146, 146, 146);
+        
+    }
+    .taco,.pizza{
+        height:10%;
+        font-family:"poppins";
+        font-size:15px;
+    }
+    .image1{
+        background:url("https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-600,h-450,fo-auto"); 
+        margin-top:3em;
+        height:100%;
+        width:100%;
+        /*   border-radius:50%; */
+        background-size:100% 100%;
+        clip-path:circle();
+    
+    }
+    .image2{
+        background:url("https://www.santabanta.com/images/wallpapers/food/farmhouse-pizza-slices_1024-768.jpg"); 
+        margin-top:3em;
+        height:100%;
+        width:100%;
+        /*   border-radius:50%; */
+        background-size:100% 100%;
+        clip-path:circle();
+    
+    }
+    .two{
+        /* background: lightgreen; */
+        height:70vh;
+        width:90%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-left: 27px;
+        margin-top: -30em;
+    
+    }
+    .two .Chicken,.two .Loaded{
+        height:40%;
+        width:180px;
+        /*   background:blue; */
+        margin:0 0.5em;
+    }
+    .Chicken,.Loaded{ 
+        height:100%;
+        width:90%;
+        background:#fafafa;
+        box-shadow: 20px 25px 55px rgb(146, 146, 146);
+        /* border:3px solid white; */
+        display:grid;
+        align-items:center;
+        justify-content:center;
+        border-radius: 25px;
+    }
+    .nachos,.burger{
+        height:10%;
+        font-family:"poppins";
+        font-size:15px;
+    }
+    .image3{
+        background:url("https://i2.wp.com/globalarticlefinder.com/wp-content/uploads/2019/12/chicken-burger.jpg?resize=1024%2C883&ssl=1"); 
+        margin-top:3em;
+        height:100%;
+        width:100%;
+        /*   border-radius:50%; */
+        background-size:100% 100%;
+        clip-path:circle();
+    
+    }
+    .image4{
+        background:url("https://i.pinimg.com/564x/8d/2e/aa/8d2eaa03021e23c16d7777b270642b03.jpg"); 
+        margin-top:3em;
+        height:100%;
+        width:100%;
+        /*   border-radius:50%; */
+        background-size:95% 95%;
+        clip-path:circle();
+    
+    }
+    .three{
+        display: none;
+    }
+    .text_mob{
+        display: grid;
+        height:20vh;
+        width: 100vw;
+        /* background: chartreuse; */
+        align-items: center;
+        justify-content: center;
+        margin-top: -10em;
+        
+    }
+    .random{
+        font-size: 15px;
+        font-family: "poppins";
+        font-weight: 350;
+        width:80%;
+        /* background: cyan; */
+        text-align: left;
+       
+    }
+    .lineq{
+        background: red;
+        height:2px;
+        width: 60px;
+    }
+    .random,.lineq{
+        margin-left: 2em;
+    }
+}
